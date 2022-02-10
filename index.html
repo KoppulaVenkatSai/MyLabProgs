@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<head>
+	<title>Basic Tags</title>
+</head>
+<body style="background-color: rgb(167, 243, 243);">
+	<fieldset>
+		<legend align="center"style ="font-size:300%;font-family:Maiandra GD;color: rgb(1, 138, 126">
+			Instant E-PAN Registration
+		</legend>
+			
+		<form>
+			<p>Name: <input type="text" placeholder="Enter as per aadhaar"></p>
+			<p>Aadhaar No: <input type="number" placeholder="12 digits only"></p>
+			<p>Mobile No: <input type="number" placeholder="Enter without '+91'"></p>
+			<br>
+			<div>
+				<input type="checkbox" name="Martial_stat" id="Married">
+					<label for="Married">Married</label>
+				</input>
+				<input type="checkbox" name="Martial_stat" id="Un Married">
+					<label for="Un Married">Un Married</label>
+				</input>
+			</div>
+			<p><input type="text" placeholder="Enter your address"></p>
+			<div>
+				<select id="Address Type">
+					<option>Home</option>
+					<option>Pickup point</option>
+				</select>
+			</div>
+			<br>
+			<div>
+				<select id="Delivery Type">
+					<option>Normal Delivery</option>
+					<option>Fast Delivery</option>
+				</select>
+			</div>
+			<br>
+			<div>
+				<input type="radio" name="Payment_Method" value="Upi" id="Upi">
+					<label for="Upi">Upi</label>
+				</input>
+				<input type="radio" name="Payment_Method" value="Imps" id="Imps">
+					<label for="Imps">Imps</label>
+				</input>
+				<input type="radio" name="Payment_Method" value="Cash on delivery" id="Cash on delivery">
+					<label for="Cash on delivery">Cash on delivery</label>
+				</input>
+			</div>	<br>
+	
+		</form>
+	</fieldset>
+</body>
