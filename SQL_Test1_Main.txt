@@ -1,0 +1,13 @@
+SQL> desc student
+ERROR:
+ORA-04043: object student does not exist 
+
+
+SQL> desc academics
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ ROLLNO                                             VARCHAR2(10)
+ GPA                                                NUMBER(2)
+ PREFEREDLANG                                       VARCHAR2(10)
+
+SQL> spool off
