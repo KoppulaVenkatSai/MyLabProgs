@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<head>
+	<title>Registration Form</title>
+</head>
+<body style="background-color: rgb(167, 243, 243);">
+	<fieldset>
+		<legend align="center"style ="font-size:300%;font-family:Maiandra GD;color: rgb(1, 138, 126">
+			Instant E-PAN Registration
+		</legend>
+			
+		<form>
+			<p>Name: <input type="text" placeholder="Enter as per aadhaar" required></p>
+			<p>Aadhaar No: <input type="number" placeholder="12 digits only" required></p>
+			<p>Mobile No: <input type="number" placeholder="Enter without '+91'" required></p>
+			<br>
+			<div>
+				<input type="checkbox" name="Martial_stat" id="Married" required>
+					<label for="Married">Married</label>
+				</input>
+				<input type="checkbox" name="Martial_stat" id="Un Married" required>
+					<label for="Un Married">Un Married</label>
+				</input>
+			</div>
+			<p>Address: <textarea placeholder="Enter your address" rows="4" cols="50" required></textarea>
+			</p><br>
+			<div>
+				<p>Choose Address Type: </p>
+				<select id="Address Type">
+					<option>Home</option>
+					<option>Pickup point</option>
+				</select>
+			</div>
+			<div>
+				<p>Choose Delivery Type: </p>
+				<select id="Delivery Type">
+					<option>Normal Delivery</option>
+					<option>Fast Delivery</option>
+				</select>
+			</div>
+			<br><br>
+			<div>
+				<input type="radio" name="Payment_Method" value="Upi" id="Upi">
+					<label for="Upi">Upi</label>
+				</input>
+				<input type="radio" name="Payment_Method" value="Imps" id="Imps">
+					<label for="Imps">Imps</label>
+				</input>
+				<input type="radio" name="Payment_Method" value="Cash on delivery" id="Cash on delivery">
+					<label for="Cash on delivery">Cash on delivery</label>
+				</input>
+			</div>	<br>
+			<img src="captcha.jpg" alt="Loging captcha" height="100px">
+			<p>Enter the captcha: <input type="text" </p> <br>
+			<p style="text-align: center;"><button type="submit" onclick="alert('Details Submitted Successfully...')">Proceed</button></p>
+	
+		</form>
+	</fieldset>
+</body>
