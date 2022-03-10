@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Calci</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html{
+            width: 100%;
+            height: 100%;
+        }
+        body{
+            width: 100%;
+            height: 100%;
+        }
+        .super{
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            /* align-items: center; */
+            /* align-self: center; */
+            /* align-content: center; */
+            width: 25%;
+            height: 50%;
+            display: flex;
+            /* flex-wrap: wrap; */
+            justify-content: center;
+            align-items: center;
+        }
+        .calci{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+        .btns{
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            margin: 10px;
+            padding: 2px;
+        }
+        .btn{
+            border: 2px solid black;
+            height: 50px;
+            width: 50px;
+            border-radius: 5px;
+        }
+        #div0{
+            display: flex;
+            height: 50px;
+            width: 500px;
+            justify-content: center;
+        }
+        .ip{
+            border: 3px solid black;
+            display: inline-block;
+            height: 25px;
+            width: 100%;
+            margin-left: 10px;
+            margin-right: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="super">
+        <div class="container">
+            <form class="calci" name="form">
+                <div class="btns" id="div0">
+                    <input class="ip" id="ip" name="ip" />
+                </div>
+                <div class="btns" id="div1">
+                    <input type="button" class="btn" id="1" value="1" onclick="form.ip.value+='1'">
+                </div>
+                <div class="btns" id="div2">
+                    <input type="button" class="btn" id="2" value="2" onclick="form.ip.value+='2'">
+                </div>
+                <div class="btns" id="div3">
+                    <input type="button" class="btn" id="3" value="3" onclick="form.ip.value+='3'">
+                </div>
+                <div class="btns" id="div4">
+                    <input type="button" class="btn" id="4" value="4" onclick="form.ip.value+='4'">
+                </div>
+                <div class="btns" id="div5">
+                    <input type="button" class="btn" id="5" value="5" onclick="form.ip.value+='5'">
+                </div>
+                <div class="btns" id="div6">
+                    <input type="button" class="btn" id="6" value="6" onclick="form.ip.value+='6'">
+                </div>
+                <div class="btns" id="div7">
+                    <input type="button" class="btn" id="7" value="7" onclick="form.ip.value+='7'">
+                </div>
+                <div class="btns" id="div8">
+                    <input type="button" class="btn" id="8" value="8" onclick="form.ip.value+='8'">
+                </div>
+                <div class="btns" id="div9">
+                    <input type="button" class="btn" id="9" value="9" onclick="form.ip.value+='9'">
+                </div>
+                <div class="btns" id="div10">
+                    <input type="button" class="btn" id="0" value="0" onclick="form.ip.value+='0'">
+                </div>
+                <div class="btns" id="div11">
+                    <input type="button" class="btn" id="+" value="+" onclick="form.ip.value+='+'">
+                </div>
+                <div class="btns" id="div12">
+                    <input type="button" class="btn" id="-" value="-" onclick="form.ip.value+='-'">
+                </div>
+                <div class="btns" id="div13">
+                    <input type="button" class="btn" id="*" value="*" onclick="form.ip.value+='*'">
+                </div>
+                <div class="btns" id="div14">
+                    <input type="button" class="btn" id="/" value="/" onclick="form.ip.value+='/'">
+                </div>
+                <div class="btns" id="div15">
+                    <input type="button" class="btn" id="15" value="=" onclick="form.ip.value=eval(form.ip.value)">
+                </div>
+                <div class="btns" id="div16">
+                    <input type="button" class="btn" id="16" value="C" onclick="form.ip.value=''">
+                </div>
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>
